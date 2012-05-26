@@ -15,7 +15,6 @@
 # this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
-import sys
 import math
 
 import dbus
@@ -154,7 +153,7 @@ class DiscoverLocation:
         """
         self.accuracy = accuracy
         self.resource = resource
-        self.client.SetRequirements(accuracy, time, require_updates, allowed_resources)
+        self.client.SetRequirements(accuracy, time, require_updates, resource)
             
     # provider changed methods, not really being used but it's useful to have 
     # them here just in case
