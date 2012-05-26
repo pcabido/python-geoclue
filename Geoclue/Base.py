@@ -20,7 +20,6 @@ import math
 
 import dbus
 from dbus.mainloop.glib import DBusGMainLoop
-import gobject
 
 import geoclue
 from Signal import Signal
